@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int over_average(int lengh_str,int lengh_row, int a[lengh_str][lengh_row]){
-    int mass = 0, j = 0;
+    float mass = 0; 
+    int j = 0;
     for(int i = 0; i<lengh_row; i++){
         j = i;
         mass += a[i][j];
@@ -15,6 +16,7 @@ int over_average(int lengh_str,int lengh_row, int a[lengh_str][lengh_row]){
             }
         }
     }
+    return count;
 }
 
 int main(){
@@ -23,5 +25,6 @@ int main(){
                     {3,3,3,3,3},
                     {4,4,4,4,4},
                     {5,5,5,5,5}};
-    over_average(5,5, mass);
+    printf("%d ",over_average(5,5, mass));
+    return 0;
 }

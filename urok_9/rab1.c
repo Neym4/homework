@@ -1,3 +1,5 @@
+//это код для 2 задания
+
 #include <stdio.h>
 #include <ctype.h>
 
